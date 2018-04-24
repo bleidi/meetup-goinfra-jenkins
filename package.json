@@ -1,0 +1,27 @@
+{
+  "name": "meetup-gojs-webcomponents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bleidi/meetup-gojs-webcomponents.git",
+  "author": "bleidi",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "dependencies" : {
+    "headjs": "1.0.3",
+    "reveal.js": "3.6.0",
+    "highlight.js": "9.12.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "html-loader": "^0.5.5",
+    "babel-loader" : "^7.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

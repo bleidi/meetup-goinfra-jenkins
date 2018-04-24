@@ -1,0 +1,7 @@
+.no-wrap {
+  white-space: nowrap;
+}
+
+.strike {
+  text-decoration: line-through;
+}
