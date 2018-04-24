@@ -33,6 +33,11 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test    : /\.(png|jpg|svg)$/,
+        include : path.join(__dirname, 'images'),
+        loader  : 'url-loader?limit=30000&name=images/[name].[ext]'
       }
     ]
   },
@@ -67,12 +72,9 @@ module.exports = {
       },
       {
         from: path.resolve(__dirname, './node_modules/reveal.js/plugin/highlight/highlight.js')
-      },
+      }, 
       {
-        from: path.resolve(__dirname, 'thinking.mp4')
-      },
-      {
-        from: path.resolve(__dirname, 'hl_ty.mp4')
+        from: path.resolve(__dirname, './*.mp4')
       }
     ]),
     new webpack.HotModuleReplacementPlugin(),

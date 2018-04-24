@@ -5,3 +5,7 @@
 .strike {
   text-decoration: line-through;
 }
+
+img {
+  height: 500px;
+}
